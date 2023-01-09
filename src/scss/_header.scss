@@ -1,0 +1,78 @@
+.header {
+    padding-top: 2.1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    .container {
+        display: flex;
+    }
+
+    &__logo {
+        width: 21.6rem;
+        height: 5.8rem;
+        object-fit: contain;
+    }
+
+    &__nav {
+        margin-top: .6rem;
+        margin-left: auto;
+        margin-right: 13.4rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -2.7rem;
+            right: -6.7rem;
+            width: .2rem;
+            height: 8.3rem;
+            background-color: #FFF;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+
+            &__item {
+
+                &:not(:last-child) {
+                    margin-right: 3.5rem;
+                }
+
+                a {
+                    font-family: 'Euclid Circular A';
+                    font-weight: 500;
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                    color: #F9FBFE;
+                }
+            }
+        }
+    }
+
+    &__phone {
+        margin-top: .8rem;
+        display: flex;
+        align-items: center;
+        align-self: flex-start;
+
+        span {
+            margin-right: 1.9rem;
+            font-family: 'Euclid Circular A';
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        img {
+            width: 2.2rem;
+            height: 2.2rem;
+            object-fit: contain;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.main-hero {
+    &__swiper {
+        &-slide {
+            &__top {
+                width: 192rem;
+                height: 88rem;
+
+                .container {
+                    position: relative;
+                }
+
+                &-img {
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                }
+
+                &-title {
+                    position: absolute;
+                    left: 0;
+                    bottom: 3rem;
+                    width: 46.5rem;
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+
+                &-number {
+                    position: absolute;
+                    right: 0;
+                    bottom: -1.1rem;
+                    font-size: 20rem;
+                    line-height: 24.4rem;
+                    text-transform: uppercase;
+                    color: transparent;
+                    -webkit-text-stroke: 1.4px rgba(255, 255, 255, 0.35);
+                }
+            }
+
+            &__bottom {
+                padding-top: 7rem;
+                padding-bottom: 7rem;
+                position: relative;
+                background-color: #171717;
+                border-top: .2rem solid #FFFFFF;
+                border-bottom: .2rem solid #FFFFFF;
+
+                &-title {
+                    font-size: 8rem;
+                    line-height: 1;
+                    color: #FFFFFF;
+                }
+
+                &-left {
+                    position: absolute;
+                    right: 43.3rem;
+                    top: 3.3rem;
+                    width: 18rem;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: -3.3rem;
+                        right: -6.2rem;
+                        width: .2rem;
+                        height: 8.3rem;
+                        background-color: #FFF;
+                    }
+
+                    &-text {
+                        font-family: 'Euclid Circular A';
+                        font-weight: 500;
+                        font-size: 2rem;
+                        line-height: 2.9rem;
+                        text-align: right;
+                        color: #FFFFFF;
+                    }
+                }
+
+                &-right {
+                    position: absolute;
+                    right: 10.1rem;
+                    top: 3.3rem;
+                    width: 22rem;
+
+                    &-number {
+                        margin-bottom: 2.7rem;
+                        font-family: 'Euclid Circular A';
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                        line-height: 2.7rem;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+
+                    &-text {
+                        font-size: 1.6rem;
+                        line-height: 3rem;
+                        text-transform: uppercase;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}

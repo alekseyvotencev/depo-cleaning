@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="css/choices.min.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Главная</title>
+</head>
+
+<body>
+    @@include('./templates/header.html')
+    <main>
+        <section class="main-hero">
+            <div class="swiper-container main-hero__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide main-hero__swiper-slide">
+                        <div class="main-hero__swiper-slide__top">
+                            <img src="./images/main-hero-swiper-img1.png" alt=""
+                                class="main-hero__swiper-slide__top-img">
+                            <div class="container">
+                                <p class="main-hero__swiper-slide__top-title">Комплексная уборка объектов недвижимости
+                                </p>
+                                <p class="main-hero__swiper-slide__top-number">002</p>
+                            </div>
+                        </div>
+                        <div class="main-hero__swiper-slide__bottom">
+                            <div class="container">
+                                <p class="main-hero__swiper-slide__bottom-title">клининг</p>
+                                <div class="main-hero__swiper-slide__bottom-left">
+                                    <p class="main-hero__swiper-slide__bottom-left-text">Работаем по всей России</p>
+                                </div>
+                                <div class="main-hero__swiper-slide__bottom-right">
+                                    <p class="main-hero__swiper-slide__bottom-right-number">003 слайд</p>
+                                    <p class="main-hero__swiper-slide__bottom-right-text">Промышленное мытье окон</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('./templates/footer.html')
+</body>
+
+</html>
