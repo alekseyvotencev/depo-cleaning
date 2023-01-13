@@ -1,0 +1,120 @@
+.footer {
+    &__top {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        border-bottom: .2rem solid #FFFFFF;
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        &-logo {
+            margin-right: 22.8rem;
+            width: 21.6rem;
+            height: 5.7rem;
+            object-fit: contain;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+
+            &__item {
+                &:not(:last-child) {
+                    margin-right: 4.5rem;
+                }
+
+                a {
+                    font-family: 'Euclid Circular A';
+                    font-weight: 500;
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                    color: #F9FBFE;
+                }
+            }
+        }
+
+        &-right {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+
+            &__links {
+                margin-right: 2rem;
+
+                a {
+                    display: block;
+                    font-family: 'Euclid Circular A';
+                    font-weight: 400;
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                    text-align: right;
+                    color: #FFFFFF;
+
+                    &:first-child {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            &__img {
+                width: 4.1rem;
+                height: 4.2rem;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__bottom {
+        padding-top: 4.3rem;
+        padding-bottom: 4.3rem;
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        &-left {
+            margin-right: 49.7rem;
+            font-family: 'Euclid Circular A';
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            color: #F9FBFE;
+        }
+
+        &-center {
+            font-family: 'Euclid Circular A';
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            color: rgba(249, 251, 254, 0.5);
+        }
+
+        &-right {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+
+            &__logo {
+                margin-right: 1rem;
+                width: 3.7rem;
+                height: 3.7rem;
+                object-fit: contain;
+            }
+
+            &__text {
+                font-family: 'Euclid Circular A';
+                font-weight: 400;
+                font-size: 1.8rem;
+                line-height: 2.3rem;
+                color: #F9FBFE;
+
+                .gray {
+                    color: rgba(249, 251, 254, 0.62);
+                }
+            }
+        }
+    }
+}

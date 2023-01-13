@@ -1,0 +1,114 @@
+.main-partners {
+    padding-top: 12.4rem;
+    padding-bottom: 20rem;
+
+    &__heading {
+        margin-bottom: 5.7rem;
+        font-size: 4.5rem;
+        line-height: 7.9rem;
+        text-align: center;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-areas:
+            "A A A    B B B   C C C   D D D"
+            "E E E    E E E   F F F   G G G"
+            "H H H    I I I   J J J   K K K";
+
+        grid-template-rows: repeat(3, 17rem);
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: .2rem solid #FFFFFF;
+            border-right: .2rem solid #FFFFFF;
+
+            &__link {
+                img {
+                    width: auto;
+                    height: auto;
+                    object-fit: contain;
+                }
+            }
+
+            &:first-child {
+                grid-area: A;
+            }
+
+            &:nth-child(2) {
+                grid-area: B;
+            }
+
+            &:nth-child(3) {
+                grid-area: C;
+            }
+
+            &:nth-child(4) {
+                grid-area: D;
+                border-right: none;
+            }
+
+            &:nth-child(5) {
+                grid-area: E;
+
+
+                p {
+                    font-family: 'Euclid Circular A';
+                    font-weight: 500;
+                    font-size: 2rem;
+                    line-height: 2.9rem;
+                    color: #FFFFFF;
+
+                    &:first-child {
+                        margin-right: 4rem;
+                    }
+
+                    &:nth-child(2) {
+                        margin-right: 3.7rem;
+                        font-size: 4.5rem;
+                        line-height: 6.8rem;
+                        color: #FD0601;
+
+                        span {
+                            font-size: 3rem;
+                            line-height: 3rem;
+                            vertical-align: text-top;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(6) {
+                grid-area: F;
+            }
+
+            &:nth-child(7) {
+                grid-area: G;
+                border-right: none;
+            }
+
+            &:nth-child(8) {
+                grid-area: H;
+                border-bottom: none;
+            }
+
+            &:nth-child(9) {
+                grid-area: I;
+                border-bottom: none;
+            }
+
+            &:nth-child(10) {
+                grid-area: J;
+                border-bottom: none;
+            }
+
+            &:nth-child(11) {
+                grid-area: K;
+                border-bottom: none;
+                border-right: none;
+            }
+        }
+    }
+}

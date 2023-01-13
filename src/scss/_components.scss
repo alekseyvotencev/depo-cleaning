@@ -1,163 +1,87 @@
-.link {
+.swiper__controls {
+    padding-top: 2rem;
     display: flex;
     align-items: center;
-    font-size: 2rem;
-    line-height: 2.9rem;
-    color: #000;
-    transition: color .2s ease-in-out;
+    width: 100%;
+    border-top: .2rem solid #D9D9D9;
 
-    &:hover {
-
-        color: #E30613;
+    &__link {
+        display: flex;
+        align-items: center;
 
         svg {
-            circle {
-                stroke: #E30613;
-            }
-
-            path {
-                fill: #E30613;
-            }
-        }
-    }
-
-    svg {
-        &:first-child {
-            width: 7.1rem;
-            height: 7.1rem;
+            margin-right: 1.4rem;
+            width: 5rem;
+            height: 5rem;
             object-fit: contain;
         }
 
-        &:last-child {
-            width: 2.8rem;
-            height: .9rem;
-            object-fit: contain;
-        }
-
-        circle {
-            transition: stroke .2s ease-in-out;
-        }
-
-        path {
-            transition: fill .2s ease-in-out;
+        span {
+            font-size: 1.6rem;
+            line-height: 3rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
         }
     }
-
-    span {
-        margin-left: -4rem;
-        margin-right: 1.3rem;
-        background-color: #FFF;
-    }
-}
-
-.swiper__controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     &__prev,
     &__next {
         cursor: pointer;
+        z-index: 10;
 
-        img {
-            width: 3.4rem;
+        svg {
+            width: 3.1rem;
+            height: 3.2rem;
             object-fit: contain;
         }
     }
 
     &__prev {
-        margin-right: 2.1rem;
+        margin-left: auto;
+        margin-right: 5.2rem;
+        position: relative;
 
-        img {
-            transform: scale(-1);
+        &::after {
+            content: '';
+            position: absolute;
+            right: -2.6rem;
+            top: -2.8rem;
+            width: .2rem;
+            height: 8.3rem;
+            background-color: #FFF;
         }
+    }
+
+    &__next {
+        margin-right: 13rem;
     }
 
     &__pagination {
-        margin-right: 1.5rem;
         position: relative;
-        display: flex;
-        align-items: center;
-        width: auto;
         bottom: auto;
         left: auto;
+        top: auto;
+        right: auto;
+        width: auto;
+        display: flex;
+        align-items: center;
 
         .current {
-            margin-right: .5rem;
-            font-family: 'Circe';
-            font-size: 4rem;
-            line-height: 5.9rem;
-            color: #000000;
+            margin-right: 3rem;
         }
 
         .total {
-            font-family: 'Circe';
-            font-size: 1.5rem;
-            line-height: 1.8rem;
-            color: #000000;
-        }
-    }
-}
-
-@media (max-width: 48em) {
-    .link {
-        font-size: 3.2rem;
-        line-height: 4.8rem;
-
-        span {
-            margin-left: -5rem;
-            margin-right: 2rem;
+            color: rgba(255, 255, 255, 0.4);
         }
 
-        img {
-            width: 4rem;
-            height: auto;
-        }
-
-        svg {
-            &:first-child {
-                width: 7.6rem;
-                height: 7.6rem;
-            }
-
-            &:last-child {
-                width: 4rem;
-                height: 2rem;
-            }
-        }
-    }
-
-    .swiper__controls {
-        width: 100%;
-        justify-content: space-between;
-
-        &__prev,
-        &__next {
-            img {
-                width: 6.8rem;
-            }
-        }
-
-        &__prev {
-            margin-right: 0;
-        }
-
-        &__pagination {
-            margin-right: 0;
-
-            .current {
-                margin-right: 1rem;
-                font-size: 8rem;
-                line-height: 9rem;
-                color: #000000;
-            }
-
-            .total {
-                font-family: 'Circe';
-                font-size: 3rem;
-                line-height: 4.8rem;
-                color: #000000;
-            }
+        .current,
+        .total {
+            position: relative;
+            display: inline-block;
+            font-family: 'Euclid Circular A';
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.7rem;
         }
     }
 }
