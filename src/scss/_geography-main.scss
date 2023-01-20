@@ -1,0 +1,206 @@
+.geography-main {
+    padding-top: 16rem;
+    padding-bottom: 23rem;
+
+    .container {
+        position: relative;
+    }
+
+    &__heading {
+        margin-bottom: 23.4rem;
+        font-size: 4.5rem;
+        line-height: 7.9rem;
+        text-transform: uppercase;
+        color: #FFF;
+    }
+
+    &__cities,
+    &__objects {
+        position: absolute;
+        top: 0;
+        display: inline-block;
+
+        .number {
+            margin-bottom: .7rem;
+            font-size: 8rem;
+            line-height: 9.8rem;
+            text-transform: uppercase;
+            color: transparent;
+            background-color: unset;
+            text-align: right;
+            -webkit-text-stroke: 1.4px #FF0F00;
+
+            span {
+                font-size: 5rem;
+                line-height: 7rem;
+                vertical-align: text-top;
+            }
+        }
+
+        .text {
+            font-family: 'Euclid Circular A';
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.9rem;
+            text-align: right;
+            color: #FFFFFF;
+        }
+    }
+
+    &__cities {
+        right: 35rem;
+    }
+
+    &__objects {
+        right: 0;
+    }
+
+    &__container {
+        margin-bottom: 1rem;
+        position: relative;
+    }
+
+    &__map {
+        width: 100%;
+        height: 46.6rem;
+        object-fit: contain;
+    }
+
+    &__list {
+        &-item {
+            position: absolute;
+            display: flex;
+            align-items: stretch;
+
+            &:first-child {
+                left: 10rem;
+                top: -1.4rem;
+            }
+
+            &:nth-child(2) {
+                left: 62.75rem;
+                top: -7rem;
+
+                .main-geography__list-item__text {
+                    padding-left: 5.4rem;
+                    padding-right: 5.7rem;
+                }
+            }
+
+            &:nth-child(3) {
+                left: 136.7rem;
+                top: 2.8rem;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -16.4rem;
+                left: 50%;
+                width: .2rem;
+                height: 16.4rem;
+                background-color: #FFF;
+                transform: translateX(-50%);
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: .9rem;
+                height: .9rem;
+                background-color: #FF2C1F;
+                border: .2rem solid #FFF;
+                border-radius: 50%;
+                transform: translate(-50%, 50%);
+            }
+
+            &__img {
+                margin-right: 1rem;
+                width: 8.7rem;
+                height: 8.5rem;
+                object-fit: contain;
+            }
+
+            &__text {
+                padding-left: 3rem;
+                padding-right: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #FFF;
+
+                p {
+                    font-family: 'Euclid Circular A';
+                    font-weight: 700;
+                    font-size: 2rem;
+                    line-height: 2.9rem;
+                    color: #171717;
+                }
+            }
+        }
+    }
+
+    &__notice {
+        font-size: 2rem;
+        line-height: 3.2rem;
+        text-align: right;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    @media (max-width: 48em) {
+        padding-top: 20rem;
+        padding-bottom: 32rem;
+
+        &__heading {
+            margin-bottom: 8rem;
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+
+        &__cities,
+        &__objects {
+            margin-bottom: 9rem;
+            position: relative;
+            display: inline-block;
+            top: auto;
+            right: auto;
+
+            .number {
+                font-size: 10rem;
+                line-height: 12.2rem;
+
+                span {
+                    font-size: 7rem;
+                    line-height: 8.5rem;
+                }
+            }
+
+            .text {
+                font-size: 2.6rem;
+                line-height: 5.8rem;
+            }
+        }
+
+        &__container {
+            margin-bottom: 9rem;
+        }
+
+        &__cities {
+            margin-left: 4.6rem;
+            margin-right: 4rem;
+        }
+
+        &__map {
+            height: 18.6rem;
+            margin-bottom: 9rem;
+        }
+
+        &__notice {
+            font-size: 3rem;
+            line-height: 4.6rem;
+        }
+    }
+}

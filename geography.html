@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="css/choices.min.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>География</title>
+</head>
+
+<body>
+    @@include('./templates/header.html')
+    <main>
+        <section class="geography-hero">
+            <picture>
+                <source media="(max-width: 48em)" srcset="./images/geography-hero-img-mobile.png">
+                <source media="(min-width: 48.01em)" srcset="./images/geography-hero-img.png">
+                <img src="./images/geography-hero-img.png,%20geography-hero-img-mobile.png" alt=""
+                    class="geography-hero__img">
+            </picture>
+            <p class="geography-hero__heading">География</p>
+        </section>
+        <section class="geography-main">
+            <div class="container">
+                <p class="geography-main__heading">Работаем по всей россии</p>
+                <div class="geography-main__cities">
+                    <p class="number">90<span>+</span></p>
+                    <p class="text">Городов и областей</p>
+                </div>
+                <div class="geography-main__objects">
+                    <p class="number">160<span>+</span></p>
+                    <p class="text">Объектов по всей России</p>
+                </div>
+                <div class="geography-main__container">
+                    <picture>
+                        <source media="(max-width: 48em)" srcset="./images/svg/main-geography-map-mobile.svg">
+                        <source media="(min-width: 48.01em)" srcset="./images/svg/main-geography-map.svg">
+                        <img src="./images/svg/main-geography-map.svg,%20./images/svg/main-geography-map-mobile.svg"
+                            alt="" class="geography-main__map">
+                    </picture>
+                    <ul class="geography-main__list desktop">
+                        <li class="geography-main__list-item">
+                            <img src="./images/main-geography-img1.png" alt="" class="geography-main__list-item__img">
+                            <div class="geography-main__list-item__text">
+                                <p>Москва и МО</p>
+                            </div>
+                        </li>
+                        <li class="geography-main__list-item">
+                            <img src="./images/main-geography-img2.png" alt="" class="geography-main__list-item__img">
+                            <div class="geography-main__list-item__text">
+                                <p>Самара</p>
+                            </div>
+                        </li>
+                        <li class="geography-main__list-item">
+                            <img src="./images/main-geography-img3.png" alt="" class="geography-main__list-item__img">
+                            <div class="geography-main__list-item__text">
+                                <p>Владивосток</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="geography-main__notice">Присутствуем в Дальневосточном<br> регионе, Сибири, Кавказе,<br>
+                        Поволжье.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('./templates/footer.html')
+</body>
+
+</html>
