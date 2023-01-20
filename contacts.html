@@ -12,7 +12,43 @@
 </head>
 
 <body>
-    @@include('./templates/header.html') 
+    @@include('./templates/header.html')
+    <main>
+        <section class="contacts-hero">
+            <img src="./images/contacts-hero-img.png" alt="" class="contacts-hero__img">
+            <p class="contacts-hero__heading">Контакты</p>
+        </section>
+        <section class="contacts-main">
+            <div class="container">
+                <div class="contacts-main__left">
+                    <ul class="contacts-main__left-list">
+                        <li class="contacts-main__left-list__item">
+                            <img src="./images/svg/contacts-point-icon.svg" alt=""
+                                class="contacts-main__left-list__item-img" id="address">
+                            <p class="contacts-main__left-list__item-text">г. Москва,<br>ул. Аргуновская 3, кв 1, офис
+                                1.
+                            </p>
+                        </li>
+                        <li class="contacts-main__left-list__item">
+                            <img src="./images/svg/contacts-phone-icon.svg" alt=""
+                                class="contacts-main__left-list__item-img" id="phone">
+                            <a href="tel:+74951503893" class="contacts-main__left-list__item-link">7 (495)
+                                150-38-93</a>
+                        </li>
+                        <li class="contacts-main__left-list__item">
+                            <img src="./images/svg/contacts-mail-icon.svg" alt=""
+                                class="contacts-main__left-list__item-img" id="mail">
+                            <a href="mailto:info@sk-depo.ru"
+                                class="contacts-main__left-list__item-link">info@sk-depo.ru</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts-main__right">
+                    <div class="contacts-main__right-map" id="contacts-main-map"></div>
+                </div>
+            </div>
+        </section>
+    </main>
     @@include('./templates/footer.html')
 </body>
 

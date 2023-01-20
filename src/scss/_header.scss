@@ -83,7 +83,7 @@
         padding-top: 4rem;
         padding-bottom: 4rem;
         background-color: #171717;
-        border-bottom: 1px solid #FFFFFF;
+        border-bottom: .2rem solid #FFFFFF;
 
         .container {
             align-items: center;
@@ -113,17 +113,132 @@
                 width: 4.8rem;
                 height: 4.8rem;
                 object-fit: contain;
+
+                path {
+                    transition-property: opacity, transform;
+                    transition-duration: 0.3s;
+                    transition-timing-function: ease-in-out;
+
+                    &:first-child {
+                        transform-origin: top right;
+                    }
+
+                    &:nth-child(2) {
+                        transform-origin: center;
+                    }
+
+                    &:last-child {
+                        transform-origin: bottom right;
+                    }
+                }
+            }
+
+            &.active {
+                svg {
+                    path {
+                        &:first-child {
+                            transform: translateX(-.7rem) rotate(-45deg);
+                        }
+
+                        &:nth-child(2) {
+                            transform: scale(0);
+                            opacity: 0;
+                        }
+
+                        &:last-child {
+                            transform: translateX(-.7rem) rotate(45deg);
+                            ;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__menu {
+            padding: 7rem 4rem 54rem 4rem;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            max-height: 100vh;
+            overflow-y: auto;
+            background-color: #171717;
+            border-top: .2rem solid #FFFFFF;
+            transform: scaleX(0);
+            transform-origin: left;
+            opacity: 0;
+            transition-property: opacity, transform;
+            transition-duration: .3s;
+            transition-timing-function: ease-in-out;
+            -ms-overflow-style: none;
+
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+
+            &.active {
+                transform: scaleX(1);
+                opacity: 1;
+            }
+
+            &-phone {
+                margin-bottom: 5rem;
+                display: block;
+                font-family: 'Euclid Circular A';
+                font-weight: 500;
+                font-size: 3rem;
+                line-height: 4.4rem;
+            }
+
+            &-mail {
+                margin-bottom: 5rem;
+                display: block;
+                font-family: 'Euclid Circular A';
+                font-weight: 500;
+                font-size: 3rem;
+                line-height: 4.4rem;
+            }
+
+            &-address {
+                font-family: 'Euclid Circular A';
+                font-weight: 500;
+                font-size: 3rem;
+                line-height: 4.4rem;
             }
         }
 
         &__nav {
             margin: 0;
-            position: absolute;
-            left: -100%;
-            top: 0;
+            margin-bottom: 7rem;
+            padding-bottom: 7rem;
 
             &::after {
-                content: none;
+                width: 100%;
+                height: .2rem;
+                bottom: 0;
+                left: 0;
+                top: auto;
+                right: auto;
+            }
+
+            &-list {
+                flex-direction: column;
+                align-items: flex-start;
+
+                &__item {
+                    &:not(:last-child) {
+                        margin-right: 0;
+                        margin-bottom: 5rem;
+                    }
+
+                    a {
+                        font-weight: 800;
+                        font-size: 2.6rem;
+                        line-height: 6rem;
+                        letter-spacing: 0.05em;
+                        text-transform: uppercase;
+                    }
+                }
             }
         }
     }
