@@ -217,4 +217,70 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
     });
+
+    const partnersObjectsSwiper = new Swiper('.partners-objects__swiper', {
+        direction: 'horizontal',
+        loop: true,
+        speed: 500,
+        spaceBetween: rem(3),
+        // allowTouchMove: false,
+        slidesPerView: 'auto',
+
+        navigation: {
+            nextEl: '.partners-objects__swiper-next',
+            prevEl: '.partners-objects__swiper-prev',
+        },
+
+        pagination: {
+            el: '.partners-objects__swiper-pagination',
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+                return `<span class="current">${getThreeDigitNumber(current)}</span><span class="total">${getThreeDigitNumber(total)}</span>`;
+            }
+        },
+    });
+
+    const partnersStoresSwiper = new Swiper('.partners-stores__swiper', {
+        direction: 'horizontal',
+        loop: true,
+        speed: 500,
+        spaceBetween: rem(3),
+        // allowTouchMove: false,
+        slidesPerView: 'auto',
+
+        navigation: {
+            nextEl: '.partners-stores__swiper-next',
+            prevEl: '.partners-stores__swiper-prev',
+        },
+
+        pagination: {
+            el: '.partners-stores__swiper-pagination',
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+                return `<span class="current">${getThreeDigitNumber(current)}</span><span class="total">${getThreeDigitNumber(total)}</span>`;
+            }
+        },
+    });
+
+    const partnersCentersSwiper = new Swiper('.partners-centers__swiper', {
+        direction: 'horizontal',
+        loop: true,
+        speed: 500,
+        spaceBetween: rem(3),
+        // allowTouchMove: false,
+        slidesPerView: 'auto',
+
+        navigation: {
+            nextEl: '.partners-centers__swiper-next',
+            prevEl: '.partners-centers__swiper-prev',
+        },
+
+        pagination: {
+            el: '.partners-centers__swiper-pagination',
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+                return `<span class="current">${getThreeDigitNumber(current)}</span><span class="total">${getThreeDigitNumber(total)}</span>`;
+            }
+        },
+    });
 })
