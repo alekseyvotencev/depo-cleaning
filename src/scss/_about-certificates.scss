@@ -1,0 +1,121 @@
+.about-certificates {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+
+    &__heading {
+        margin-bottom: 6.7rem;
+        font-size: 4.5rem;
+        line-height: 7.9rem;
+        text-transform: uppercase;
+    }
+
+    &__swiper {
+        &-slide {
+            width: 38.9rem;
+
+            &__card {
+                width: 100%;
+                height: 43.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                background-color: #F1F1F1;
+
+                &-certificate {
+                    width: 23rem;
+                    height: 32.5rem;
+                    object-fit: contain;
+                    filter: drop-shadow(14px 21px 10px rgba(0, 0, 0, 0.04)) drop-shadow(8px 12px 8px rgba(0, 0, 0, 0.13)) drop-shadow(3px 5px 6px rgba(0, 0, 0, 0.22)) drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.25)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.26));
+                }
+
+                &-stamp {
+                    position: absolute;
+                    right: 4.7rem;
+                    bottom: 5.4rem;
+                    width: 6.5rem;
+                    height: 7.3rem;
+                    object-fit: contain;
+                }
+            }
+
+            &__text {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 10rem;
+
+                &-left {
+                    font-family: 'Euclid Circular A';
+                    font-weight: 500;
+                    font-size: 2rem;
+                    line-height: 2.9rem;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+                &-right {
+                    width: 11.4rem;
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                    text-align: right;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding-top: 20rem;
+        padding-bottom: 20.3rem;
+
+        &__heading {
+            margin-bottom: 10rem;
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+
+        &__swiper {
+            &-slide {
+                width: 100%;
+
+                &__card {
+                    height: 72.2rem;
+
+                    &-certificate {
+                        width: 39.6rem;
+                        height: 56rem;
+                        filter: drop-shadow(36px 57px 27px rgba(0, 0, 0, 0.01)) drop-shadow(20px 32px 23px rgba(0, 0, 0, 0.05)) drop-shadow(9px 14px 17px rgba(0, 0, 0, 0.09)) drop-shadow(2px 4px 9px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+                    }
+
+                    &-stamp {
+                        width: 11.2rem;
+                        height: 12.6rem;
+                        right: 8rem;
+                        bottom: 7rem;
+                    }
+                }
+
+                &__text {
+                    padding: 4rem 0;
+                    height: auto;
+
+                    &-left {
+                        font-size: 3rem;
+                        line-height: 5.8rem;
+                    }
+
+                    &-right {
+                        width: 18.6rem;
+                        font-size: 2.6rem;
+                        line-height: 3.2rem;
+                    }
+                }
+            }
+        }
+
+        &__swiper-controllers {
+            padding-top: 2.8rem;
+        }
+    }
+}

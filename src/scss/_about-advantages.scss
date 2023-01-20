@@ -1,0 +1,172 @@
+.about-advantages {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+
+    &__heading {
+        margin-bottom: 8.6rem;
+        font-size: 4.5rem;
+        line-height: 7.9rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__list {
+        margin-bottom: 16rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-item {
+            height: 22rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: .2rem solid rgba(255, 255, 255, 0.8);
+
+            &:first-child {
+                padding-right: 11.6rem;
+
+                p {
+                    width: 23.6rem;
+                }
+            }
+
+            &:nth-child(2) {
+                padding: 0 10.7rem;
+
+                p {
+                    width: 25.4rem;
+                }
+            }
+
+            &:nth-child(3) {
+                padding: 0 10.5rem;
+
+                p {
+                    width: 25.8rem;
+                }
+            }
+
+            &:last-child {
+                padding-left: 11.9rem;
+                border-right: none;
+
+                p {
+                    width: 23.4rem;
+                }
+            }
+
+            &__description {
+                font-size: 1.6rem;
+                line-height: 2.7rem;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+
+        &-heading {
+            margin-right: 8.2rem;
+            font-size: 4.5rem;
+            line-height: 7.9rem;
+            text-transform: uppercase;
+        }
+
+        &-description {
+            margin-top: 1.7rem;
+            font-family: 'Euclid Circular A';
+            font-weight: 500;
+            width: 107.1rem;
+            font-size: 2rem;
+            line-height: 2.9rem;
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding-top: 20rem;
+        padding-bottom: 20rem;
+
+        &__heading {
+            margin-bottom: 12rem;
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+
+        &__list-container {
+            -ms-overflow-style: none;
+            overflow: scroll;
+
+            /* хром, сафари */
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+        }
+
+        &__list {
+            margin-bottom: 16rem;
+            justify-content: flex-start;
+
+            &-item {
+                height: 28rem;
+
+                &:first-child {
+                    padding-right: 5.2rem;
+
+                    p {
+                        width: 37rem;
+                    }
+                }
+
+                &:nth-child(2) {
+                    padding: 0 5.2rem;
+
+                    p {
+                        width: 37rem;
+                    }
+                }
+
+                &:nth-child(3) {
+                    padding: 0 5.2rem;
+
+                    p {
+                        width: 42rem;
+                    }
+                }
+
+                &:last-child {
+                    padding-left: 5.2rem;
+
+                    p {
+                        width: 37rem;
+                    }
+                }
+
+                &__description {
+                    font-size: 2.6rem;
+                    line-height: 4rem;
+                }
+            }
+        }
+
+        &__bottom {
+            flex-direction: column;
+            align-items: flex-start;
+
+            &-heading {
+                margin-right: 0;
+                margin-bottom: 3rem;
+                font-size: 5rem;
+                line-height: 6rem;
+            }
+
+            &-description {
+                width: 100%;
+                font-size: 3rem;
+                line-height: 4.4rem;
+            }
+        }
+    }
+}

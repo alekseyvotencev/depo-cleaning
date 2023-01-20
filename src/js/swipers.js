@@ -283,4 +283,55 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
     });
+
+
+    // О КОМПАНИИ
+
+    const aboutCertificatesSwiper = new Swiper('.about-certificates__swiper', {
+        direction: 'horizontal',
+        speed: 500,
+        spaceBetween: rem(4.1),
+        // allowTouchMove: false,
+        slidesPerView: 'auto',
+
+        navigation: {
+            nextEl: '.about-certificates__swiper-next',
+            prevEl: '.about-certificates__swiper-prev',
+        },
+    });
+
+    const aboutEquipmentThumbsSwiper = new Swiper('.about-equipment__thumbs', {
+        spaceBetween: 0,
+        slidesPerView: 4,
+        // freeMode: true,
+        // watchSlidesProgress: true,
+        allowTouchMove: false,
+    });
+
+    const aboutEquipmentSwiper = new Swiper('.about-equipment__swiper', {
+        direction: 'horizontal',
+        loop: true,
+        speed: 500,
+        spaceBetween: rem(3),
+        // allowTouchMove: false,
+        slidesPerView: 'auto',
+
+
+        thumbs: {
+            swiper: aboutEquipmentThumbsSwiper,
+        },
+
+        navigation: {
+            nextEl: '.about-equipment__swiper-next',
+            prevEl: '.about-equipment__swiper-prev',
+        },
+
+        pagination: {
+            el: '.about-equipment__swiper-pagination',
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+                return `<span class="current">${getThreeDigitNumber(current)}</span><span class="total">${getThreeDigitNumber(total)}</span>`;
+            }
+        },
+    });
 })
