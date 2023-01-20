@@ -7,6 +7,7 @@
         font-size: 4.5rem;
         line-height: 7.9rem;
         text-align: center;
+        text-transform: uppercase;
     }
 
     &__list {
@@ -27,9 +28,57 @@
 
             &__link {
                 img {
-                    width: auto;
-                    height: auto;
                     object-fit: contain;
+
+                    &[id="stm"] {
+                        width: 20.8rem;
+                        height: 6.6rem;
+                    }
+
+                    &[id="tmx"] {
+                        width: 14rem;
+                        height: 6.6rem;
+                    }
+
+                    &[id="geldorremmash"] {
+                        width: 30.4rem;
+                        height: 6.6rem;
+                    }
+
+                    &[id="stoun"] {
+                        width: 20.6rem;
+                        height: 6.6rem;
+                    }
+
+                    &[id="carcade"] {
+                        width: 29.2rem;
+                        height: 4.9rem;
+                    }
+
+                    &[id="vtb"] {
+                        width: 24.3rem;
+                        height: 7.4rem;
+                    }
+
+                    &[id="tmx-service"] {
+                        width: 14rem;
+                        height: 9rem;
+                    }
+
+                    &[id="vikont"] {
+                        width: 21.8rem;
+                        height: 9rem;
+                    }
+
+                    &[id="lokotech"] {
+                        width: 25.3rem;
+                        height: 4.1rem;
+                    }
+
+                    &[id="grass"] {
+                        width: 20rem;
+                        height: 7.2rem;
+                    }
                 }
             }
 
@@ -109,6 +158,119 @@
                 border-bottom: none;
                 border-right: none;
             }
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding-top: 10rem;
+        padding-bottom: 31rem;
+
+        .container {
+            position: relative;
+        }
+
+        &__heading {
+            margin-bottom: 10rem;
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+
+        &__swiper {
+            .swiper-wrapper {
+                flex-direction: row;
+            }
+
+            &-slide {
+                width: 100%;
+                height: 32rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: .2rem solid #FFF;
+
+                img {
+                    &[class="stm"] {
+                        width: 38rem;
+                        height: 12rem;
+                    }
+
+                    &[class="tmx"] {
+                        width: 25.4rem;
+                        height: 12rem;
+                    }
+
+                    &[class="geldorremmash"] {
+                        width: 60.8rem;
+                        height: 13.2rem;
+                    }
+
+                    &[class="stoun"] {
+                        width: 42.2rem;
+                        height: 13.2rem;
+                    }
+
+                    &[class="carcade"] {
+                        width: 58.4rem;
+                        height: 9.8rem;
+                    }
+
+                    &[class="vtb"] {
+                        width: 48.6rem;
+                        height: 14.8rem;
+                    }
+
+                    &[class="tmx-service"] {
+                        width: 28rem;
+                        height: 18rem;
+                    }
+
+                    &[class="vikont"] {
+                        width: 43.6rem;
+                        height: 18rem;
+                    }
+
+                    &[class="lokotech"] {
+                        width: 50.6rem;
+                        height: 8.2rem;
+                    }
+
+                    &[class="grass"] {
+                        width: 40rem;
+                        height: 14.4rem;
+                    }
+                }
+            }
+        }
+
+        &__swiper-next,
+        &__swiper-prev {
+            position: absolute;
+            bottom: -9.8rem;
+            cursor: pointer;
+
+            svg {
+                width: 6.4rem;
+                height: 6.2rem;
+                object-fit: contain;
+            }
+        }
+
+        &__swiper-prev {
+            right: 14.8rem;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: -3.4rem;
+                top: -3.4rem;
+                width: .2rem;
+                height: 11rem;
+                background-color: #FFFFFF;
+            }
+        }
+
+        &__swiper-next {
+            right: 1.8rem;
         }
     }
 }

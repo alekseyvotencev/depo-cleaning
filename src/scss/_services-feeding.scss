@@ -1,6 +1,7 @@
-.main-services {
-    padding-top: 16.5rem;
-    padding-bottom: 17.5rem;
+.services-feeding {
+    padding-top: 8.5rem;
+    padding-bottom: 10.8rem;
+    background-color: #FFF;
 
     &__swipers {
         margin-bottom: 5rem;
@@ -14,6 +15,7 @@
                 font-size: 4.5rem;
                 line-height: 7.9rem;
                 text-transform: uppercase;
+                color: #171717;
             }
         }
     }
@@ -38,31 +40,22 @@
             }
 
             &__center {
-                width: 40.9rem;
-
-                &-title {
-                    margin-bottom: 5.3rem;
-                    font-family: 'Euclid Circular A';
-                    font-weight: 500;
-                    font-size: 2rem;
-                    line-height: 2.9rem;
-                    color: #FF2C1F;
-                }
+                width: 41rem;
 
                 &-subtitle {
                     margin-bottom: 1.7rem;
                     font-size: 2.4rem;
                     line-height: 3.3rem;
                     text-transform: uppercase;
+                    color: #171717;
                 }
 
                 &-description {
-                    width: 38.4rem;
                     font-family: 'Euclid Circular A';
                     font-weight: 400;
                     font-size: 1.6rem;
                     line-height: 2.2rem;
-                    color: rgba(255, 255, 255, 0.5);
+                    color: rgba(23, 23, 23, 0.5);
                 }
             }
         }
@@ -78,10 +71,10 @@
             padding-right: 3.4rem;
             display: flex;
             width: auto;
-            border-left: .2rem solid #FFFFFF;
+            border-left: .2rem solid #171717;
 
             &:last-child {
-                border-right: .2rem solid #FFF;
+                border-right: .2rem solid #171717;
             }
 
             &:hover {
@@ -93,6 +86,7 @@
                 margin: 0;
                 font-size: 2rem;
                 line-height: 3.3rem;
+                color: #171717;
                 text-transform: uppercase;
                 writing-mode: vertical-rl;
                 transform: scale(-1);
@@ -100,9 +94,39 @@
         }
     }
 
+    .services-feeding__swiper-controllers {
+        border-color: #171717;
+        padding-top: 2.8rem;
+    }
+
+    .services-feeding__swiper-pagination {
+        .current {
+            color: #171717;
+        }
+
+        .total {
+            color: rgba(23, 23, 23, 0.4);
+        }
+    }
+
+    .services-feeding__swiper-next,
+    .services-feeding__swiper-prev {
+        svg {
+            path {
+                stroke: #171717;
+            }
+        }
+    }
+
+    .services-feeding__swiper-prev {
+        &::after {
+            background-color: #171717;
+        }
+    }
+
     @media (max-width: 48em) {
-        padding-top: 20rem;
-        padding-bottom: 20rem;
+        padding-top: 12rem;
+        padding-bottom: 13.2rem;
 
         &__swipers {
             margin-bottom: 4rem;

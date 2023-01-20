@@ -79,6 +79,7 @@
                 &-img {
                     width: 100%;
                     height: 100%;
+                    object-fit: cover;
                     z-index: -1;
                 }
 
@@ -138,11 +139,12 @@
                         font-size: 8rem;
                         line-height: 1;
                         color: #FFFFFF;
+                        text-transform: uppercase;
                     }
 
                     >.main-hero__swiper-pagination {
                         position: absolute;
-                        top: 0.5rem;
+                        top: -.8rem;
                         right: -6.5rem;
 
                         .slide {
@@ -249,6 +251,98 @@
                         line-height: 3rem;
                         text-transform: uppercase;
                         color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+        &__swiper {
+
+            &-prev,
+            &-next {
+                top: 97.8rem;
+                left: auto;
+
+                svg {
+                    width: 6.4rem;
+                    height: 6.2rem;
+                }
+            }
+
+            &-prev {
+                right: 14.8rem;
+
+                &::after {
+                    right: -3rem;
+                    bottom: -3.4rem;
+                    height: 11rem;
+                }
+            }
+
+            &-next {
+                right: 3.4rem;
+            }
+
+            &-slide {
+                &__top {
+                    width: 100%;
+                    height: 107.6rem;
+
+                    &-img {
+                        height: 107.6rem;
+                    }
+
+                    &-title {
+                        left: 4rem;
+                        bottom: 5rem;
+                        width: 46rem;
+                        font-size: 2.6rem;
+                        line-height: 3.2rem;
+                    }
+                }
+
+                &__bottom {
+                    padding-top: 6rem;
+                    padding-bottom: 6rem;
+
+                    .container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    &-title {
+                        p {
+                            font-size: 5rem;
+                            line-height: 6rem;
+                        }
+
+                        &>.main-hero__swiper-pagination {
+                            top: -.4rem;
+
+                            .swiper-pagination-bullet-active {
+                                font-size: 2.6rem;
+                                line-height: 3.2rem;
+                            }
+                        }
+                    }
+
+                    &-left {
+                        right: auto;
+                        top: auto;
+                        position: relative;
+                        width: 19.8rem;
+
+                        &-text {
+                            font-size: 2.6rem;
+                            line-height: 4rem;
+                        }
+
+                        &::after {
+                            content: none;
+                        }
                     }
                 }
             }

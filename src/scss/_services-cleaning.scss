@@ -1,6 +1,6 @@
-.main-services {
-    padding-top: 16.5rem;
-    padding-bottom: 17.5rem;
+.services-cleaning {
+    padding-top: 16rem;
+    padding-bottom: 16.8rem;
 
     &__swipers {
         margin-bottom: 5rem;
@@ -39,15 +39,6 @@
 
             &__center {
                 width: 40.9rem;
-
-                &-title {
-                    margin-bottom: 5.3rem;
-                    font-family: 'Euclid Circular A';
-                    font-weight: 500;
-                    font-size: 2rem;
-                    line-height: 2.9rem;
-                    color: #FF2C1F;
-                }
 
                 &-subtitle {
                     margin-bottom: 1.7rem;
@@ -98,6 +89,10 @@
                 transform: scale(-1);
             }
         }
+    }
+
+    .services-cleaning__swiper-controllers {
+        padding-top: 2.8rem;
     }
 
     @media (max-width: 48em) {

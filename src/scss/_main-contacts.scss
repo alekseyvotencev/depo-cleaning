@@ -43,9 +43,22 @@
 
                 &-img {
                     margin-right: 3.9rem;
-                    width: auto;
-                    height: auto;
                     object-fit: contain;
+
+                    &[id="address"] {
+                        width: 6.4rem;
+                        height: 5.7rem;
+                    }
+
+                    &[id="phone"] {
+                        width: 5.4rem;
+                        height: 5.4rem;
+                    }
+
+                    &[id="mail"] {
+                        width: 5.4rem;
+                        height: 4.7rem;
+                    }
                 }
 
                 &-text,
@@ -57,6 +70,60 @@
                     color: #FFFFFF;
                 }
             }
+        }
+    }
+
+    @media (max-width: 48em) {
+        height: auto;
+
+        &__block {
+            padding: 0 4rem 12rem 4rem;
+            position: relative;
+            top: auto;
+            left: auto;
+
+            &-heading {
+                margin-bottom: 10rem;
+                font-size: 5rem;
+                line-height: 6rem;
+            }
+
+            &-list {
+                &__item {
+                    &:not(:last-child) {
+                        margin-bottom: 10rem;
+                    }
+
+                    &-img {
+                        margin-right: 5.4rem;
+
+                        &[id="address"] {
+                            width: 10rem;
+                            height: 9rem;
+                        }
+
+                        &[id="phone"] {
+                            width: 9rem;
+                            height: 9rem;
+                        }
+
+                        &[id="mail"] {
+                            width: 9rem;
+                            height: 8.4rem;
+                        }
+                    }
+
+                    &-text,
+                    &-link {
+                        font-size: 3rem;
+                        line-height: 4.4rem;
+                    }
+                }
+            }
+        }
+
+        &__map {
+            height: 90rem;
         }
     }
 }

@@ -29,6 +29,12 @@
             background-color: unset;
             text-align: right;
             -webkit-text-stroke: 1.4px #FF0F00;
+
+            span {
+                font-size: 5rem;
+                line-height: 7rem;
+                vertical-align: text-top;
+            }
         }
 
         .text {
@@ -138,11 +144,61 @@
     &__notice {
         position: absolute;
         right: 0;
-        width: 35rem;
         font-size: 2rem;
         line-height: 3.2rem;
         text-align: right;
         text-transform: uppercase;
         color: #FFFFFF;
+    }
+
+    @media (max-width: 48em) {
+        padding-top: 20rem;
+        padding-bottom: 10rem;
+
+        &__heading {
+            margin-bottom: 8rem;
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+
+        &__cities,
+        &__objects {
+            margin-bottom: 9rem;
+            position: relative;
+            display: inline-block;
+            top: auto;
+            right: auto;
+
+            .number {
+                font-size: 10rem;
+                line-height: 12.2rem;
+
+                span {
+                    font-size: 7rem;
+                    line-height: 8.5rem;
+                }
+            }
+
+            .text {
+                font-size: 2.6rem;
+                line-height: 5.8rem;
+            }
+        }
+
+        &__cities {
+            margin-left: 4.6rem;
+            margin-right: 4rem;
+        }
+
+        &__map {
+            height: 18.6rem;
+            margin-bottom: 9rem;
+        }
+
+        &__notice {
+            position: relative;
+            font-size: 3rem;
+            line-height: 4.6rem;
+        }
     }
 }
