@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     {
                         iconLayout: 'default#image',
                         // Своё изображение иконки метки.
-                        iconImageHref: '../images/svg/map-point.svg',
+                        iconImageHref: 'images/svg/map-point.svg',
                         // Размеры метки.
                         iconImageSize: [rem(12.8), rem(12.8)],
                         // Смещение левого верхнего угла иконки относительно
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     {
                         iconLayout: 'default#image',
                         // Своё изображение иконки метки.
-                        iconImageHref: '../images/svg/map-point.svg',
+                        iconImageHref: 'images/svg/map-point.svg',
                         // Размеры метки.
                         iconImageSize: [rem(6), rem(6)],
                         // Смещение левого верхнего угла иконки относительно
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     {
                         iconLayout: 'default#image',
                         // Своё изображение иконки метки.
-                        iconImageHref: '../images/svg/map-point.svg',
+                        iconImageHref: 'images/svg/map-point.svg',
                         // Размеры метки.
                         iconImageSize: [rem(10), rem(10)],
                         // Смещение левого верхнего угла иконки относительно
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     {
                         iconLayout: 'default#image',
                         // Своё изображение иконки метки.
-                        iconImageHref: '../images/svg/map-point.svg',
+                        iconImageHref: 'images/svg/map-point.svg',
                         // Размеры метки.
                         iconImageSize: [rem(6), rem(6)],
                         // Смещение левого верхнего угла иконки относительно
