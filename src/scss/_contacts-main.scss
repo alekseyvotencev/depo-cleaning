@@ -93,21 +93,24 @@
 
         &__left {
             margin-bottom: 4rem;
-            padding: 7rem 4rem 7rem 4rem;
+            padding: 7rem 4.5rem 7rem 4rem;
             width: 100%;
             height: auto;
+            justify-content: flex-start;
 
             &-list {
 
                 &__item {
+
                     &:not(:last-child) {
                         margin-bottom: 10rem;
                     }
 
                     &-img {
-                        margin-right: 4.8rem;
+                        margin-right: 5rem;
 
                         &[id="address"] {
+                            margin-right: 4rem;
                             width: 8.4rem;
                             height: 7.4rem;
                         }
