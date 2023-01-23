@@ -41,23 +41,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const mainServicesThumbsSwiper = new Swiper('.main-services__thumbs', {
         spaceBetween: 0,
         slidesPerView: 3,
-        // freeMode: true,
-        // watchSlidesProgress: true,
         allowTouchMove: false,
+        loop: true,
+        loopedSlides: 3,
     });
 
     const mainServicesSwiper = new Swiper('.main-services__swiper', {
         direction: 'horizontal',
         loop: true,
         speed: 500,
-        spaceBetween: rem(3),
+        spaceBetween: rem(5),
         // allowTouchMove: false,
         slidesPerView: 'auto',
+        loopedSlides: 3,
 
-
-        thumbs: {
-            swiper: mainServicesThumbsSwiper,
-        },
+        // thumbs: {
+        //     swiper: mainServicesThumbsSwiper,
+        // },
 
         navigation: {
             nextEl: '.main-services__swiper-next',
@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
     });
+    mainServicesSwiper.controller.control = mainServicesThumbsSwiper;
 
     const mainAboutSwiper = new Swiper('.main-about__swiper', {
         direction: 'horizontal',
@@ -118,6 +119,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // freeMode: true,
         // watchSlidesProgress: true,
         allowTouchMove: false,
+        loop: true,
+        loopedSlides: 3,
     });
 
     const servicesCleaningSwiper = new Swiper('.services-cleaning__swiper', {
@@ -127,11 +130,11 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: rem(3),
         // allowTouchMove: false,
         slidesPerView: 'auto',
+        loopedSlides: 3,
 
-
-        thumbs: {
-            swiper: servicesCleaningThumbsSwiper,
-        },
+        // thumbs: {
+        //     swiper: servicesCleaningThumbsSwiper,
+        // },
 
         navigation: {
             nextEl: '.services-cleaning__swiper-next',
@@ -146,6 +149,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
     });
+    servicesCleaningSwiper.controller.control = servicesCleaningThumbsSwiper;
+
 
     const servicesFeedingThumbsSwiper = new Swiper('.services-feeding__thumbs', {
         spaceBetween: 0,
@@ -153,6 +158,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // freeMode: true,
         // watchSlidesProgress: true,
         allowTouchMove: false,
+        loop: true,
+        loopedSlides: 3,
     });
 
     const servicesFeadingSwiper = new Swiper('.services-feeding__swiper', {
@@ -162,11 +169,11 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: rem(3),
         // allowTouchMove: false,
         slidesPerView: 'auto',
+        loopedSlides: 3,
 
-
-        thumbs: {
-            swiper: servicesFeedingThumbsSwiper,
-        },
+        // thumbs: {
+        //     swiper: servicesFeedingThumbsSwiper,
+        // },
 
         navigation: {
             nextEl: '.services-feeding__swiper-next',
@@ -181,6 +188,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
     });
+    servicesFeadingSwiper.controller.control = servicesFeedingThumbsSwiper;
 
 
     const servicesExploitationThumbsSwiper = new Swiper('.services-exploitation__thumbs', {
@@ -189,6 +197,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // freeMode: true,
         // watchSlidesProgress: true,
         allowTouchMove: false,
+        loop: true,
+        loopedSlides: 4,
     });
 
     const servicesExploitationSwiper = new Swiper('.services-exploitation__swiper', {
@@ -198,11 +208,11 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: rem(3),
         // allowTouchMove: false,
         slidesPerView: 'auto',
+        loopedSlides: 4,
 
-
-        thumbs: {
-            swiper: servicesExploitationThumbsSwiper,
-        },
+        // thumbs: {
+        //     swiper: servicesExploitationThumbsSwiper,
+        // },
 
         navigation: {
             nextEl: '.services-exploitation__swiper-next',
@@ -217,6 +227,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
     });
+    servicesExploitationSwiper.controller.control = servicesExploitationThumbsSwiper;
 
     const partnersObjectsSwiper = new Swiper('.partners-objects__swiper', {
         direction: 'horizontal',
@@ -306,6 +317,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // freeMode: true,
         // watchSlidesProgress: true,
         allowTouchMove: false,
+        loop: true,
+        loopedSlides: 4,
     });
 
     const aboutEquipmentSwiper = new Swiper('.about-equipment__swiper', {
@@ -315,11 +328,11 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: rem(3),
         // allowTouchMove: false,
         slidesPerView: 'auto',
+        loopedSlides: 4,
 
-
-        thumbs: {
-            swiper: aboutEquipmentThumbsSwiper,
-        },
+        // thumbs: {
+        //     swiper: aboutEquipmentThumbsSwiper,
+        // },
 
         navigation: {
             nextEl: '.about-equipment__swiper-next',
@@ -334,4 +347,5 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
     });
+    aboutEquipmentSwiper.controller.control = aboutEquipmentThumbsSwiper;
 })
