@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>404</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="fonts/fonts.css" />
-  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <title>404</title>
-</head>
-
-<body>
-  @@include('./templates/header.html')
-  <main>
-    <section class="error-main">
-      <div class="container">
-        <div class="error-main__block">
-          <p class="error-main__heading">404</p>
-          <p class="error-main__subheading">Страница не найдена</p>
-          <p class="error-main__description">
-            Кажется что-то пошло не так! Страница, которую вы запрашиваете, не
-            существует. Возможно она устарела, была удалена, или был введен
-            неверный адрес в адресной строке.
-          </p>
-          <a href="#" class="error-main__link">
-            <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="25.5" cy="25" r="25" fill="#FF0F00" />
-              <path d="M23.125 31L28.875 25L23.125 19" stroke="white" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-            <span>перейти на главную</span>
-          </a>
+  <body>
+    @@include('./templates/header.html')
+    <main>
+      <section class="error-main">
+        <div class="container">
+          <div class="error-main__block">
+            <p class="error-main__heading">404</p>
+            <p class="error-main__subheading">Страница не найдена</p>
+            <p class="error-main__description">
+              Кажется что-то пошло не так! Страница, которую вы запрашиваете, не
+              существует. Возможно она устарела, была удалена, или был введен
+              неверный адрес в адресной строке.
+            </p>
+            <a href="#" class="error-main__link">
+              <svg
+                width="51"
+                height="50"
+                viewBox="0 0 51 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="25.5" cy="25" r="25" fill="#FF0F00" />
+                <path
+                  d="M23.125 31L28.875 25L23.125 19"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>перейти на главную</span>
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
-  @@include('./templates/footer.html')
-</body>
-
+      </section>
+    </main>
+    @@include('./templates/footer.html')
+  </body>
 </html>
