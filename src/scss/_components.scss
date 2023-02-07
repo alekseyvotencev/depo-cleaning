@@ -2,8 +2,10 @@
     padding-top: 2rem;
     display: flex;
     align-items: center;
+    position: relative;
     width: 100%;
     border-top: .2rem solid #D9D9D9;
+    z-index: 2;
 
     &__link {
         display: flex;
